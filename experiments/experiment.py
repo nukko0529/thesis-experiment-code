@@ -17,6 +17,14 @@ def remove_nakade_dead_stones(input, board):
   #print_board(input)
   return input
 
+"""入力局面
+局面を二次元タプルで表現
+黒石は正数，白石は負数，空点は0
+
+Safe Block : 2 or -2
+Essential Block : 3 or -3
+Nakade Block : 5 or -5
+"""
 board_grid = (
     (-2,  3,  0,  0,  3,  0, -3,  0,  5, -3,  0,  2),
     (-2,  3,  0,  0,  3,  0, -3,  5, -3, -3,  0,  2),
